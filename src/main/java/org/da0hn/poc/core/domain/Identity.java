@@ -1,4 +1,4 @@
-package org.da0hn.poc.core;
+package org.da0hn.poc.core.domain;
 
 import java.util.UUID;
 
