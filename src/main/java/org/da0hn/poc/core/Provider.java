@@ -8,7 +8,7 @@ import java.util.Set;
 @Getter
 @Setter
 public class Provider {
-  private Long id;
+  private Identity id;
   private String corporateName;
   private Set<Product> products;
 }

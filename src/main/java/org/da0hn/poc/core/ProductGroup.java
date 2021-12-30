@@ -6,6 +6,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ProductGroup {
-  private Long id;
+  private Identity id;
   private String name;
 }

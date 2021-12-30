@@ -8,7 +8,7 @@ import java.util.Set;
 @Getter
 @Setter
 public class Product {
-  private Long id;
+  private Identity id;
   private String name;
   private Double salePrice;
   private ProductGroup group;
