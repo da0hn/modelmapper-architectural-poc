@@ -16,11 +16,7 @@ public class ProductController implements IProductController {
   private final IProductService service;
 
   @Override public Response<ProductSimpleView> get(final String idProduct) {
-    final var productSimpleView = this.service.get(new Identity(idProduct));
-    return Response.<ProductSimpleView>builder()
-      .data(productSimpleView)
-      .message("Success")
-      .success(true)
-      .build();
+    final var productSimpleView = this.service.getProductAsSimpleView(new Identity(idProduct));
+    return Response.success(productSimpleView);
   }
 }

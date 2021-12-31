@@ -5,6 +5,6 @@ import org.da0hn.poc.core.domain.Identity;
 
 public interface IProductService {
 
-  ProductSimpleView get(Identity id);
+  ProductSimpleView getProductAsSimpleView(Identity id);
 
 }
