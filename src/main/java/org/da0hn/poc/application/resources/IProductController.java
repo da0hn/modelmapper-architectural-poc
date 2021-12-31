@@ -1,5 +1,6 @@
 package org.da0hn.poc.application.resources;
 
+import org.da0hn.poc.application.resources.responses.ProductDetail;
 import org.da0hn.poc.application.resources.responses.ProductSimpleView;
 import org.da0hn.poc.application.resources.responses.Response;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,7 +12,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface IProductController {
 
 
-  @GetMapping("/{idProduct}")
-  Response<ProductSimpleView> get(@PathVariable String idProduct);
+  @GetMapping("/simple-view/{idProduct}")
+  Response<ProductSimpleView> getProductAsSimpleView(@PathVariable String idProduct);
+
+  @GetMapping("/detail/{idProduct}")
+  Response<ProductDetail> getProductAsDetail(@PathVariable String idProduct);
 
 }
